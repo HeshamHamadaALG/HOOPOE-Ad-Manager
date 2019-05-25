@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export class Nav extends Component {
     state = {
@@ -35,12 +36,12 @@ export class Nav extends Component {
                     <div className={this.state.classOver}></div>
                     <div className="container-nav">
                         <nav className={this.state.classNav}>
-                            <h1 className="brand"><a href="index.html">HOOPOE</a></h1>
+                            <h1 className="brand"><Link to="/">HOOPOE</Link></h1>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Services</a></li>
+                                <li><Link to="/">Home</Link></li>
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Contact</a></li>
+                                <li><Link to="/login">Login</Link></li>
                             </ul>
                         </nav>
                     </div>
