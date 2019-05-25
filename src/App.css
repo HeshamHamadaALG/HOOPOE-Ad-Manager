@@ -7,6 +7,16 @@ body {
   color: #fff;
 }
 
+/* Form  */
+
+.register {
+  background-color: rgba(231, 161, 94, 0.1);
+  border-radius: 20px;
+  margin-top: 10%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
 
 /* navbar css  */
 a{
@@ -16,12 +26,12 @@ a{
 .container-nav{
 	max-width: 120rem;
 	width: 90%;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 .menu-toggle{
 	position: fixed;
-	top: 2.5rem;
-	right: 2.5rem;
+	top: 0.5rem;
+	right: 1rem;
 	color: #eeeeee;
 	font-size: 3rem;
 	cursor: pointer;
@@ -128,7 +138,8 @@ nav ul li a:hover::after{
 @media screen and (max-width: 700px){
 
 	.menu-toggle{
-		display: block;
+    display: block;
+    
 	}
 
 	nav{
@@ -165,6 +176,17 @@ nav ul li a:hover::after{
 	  transform: scale(1);
     opacity: 1;
   }
+
+  /* Form  */
+
+.register {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin-top: 25%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
   
 }
 
@@ -180,6 +202,7 @@ nav ul li a:hover::after{
   line-height:1;
 }
 .fas{font-family:"Font Awesome 5 Free"}
-.fas{font-weight:900}
+.fas{font-weight:700}
 .fa-bars:before{content:"\f0c9"}
 .fa-times:before{content:"\f00d"}
+

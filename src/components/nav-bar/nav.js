@@ -39,8 +39,8 @@ export class Nav extends Component {
                             <h1 className="brand"><Link to="/">HOOPOE</Link></h1>
                             <ul>
                                 <li><Link to="/">Home</Link></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                                 <li><Link to="/login">Login</Link></li>
                             </ul>
                         </nav>

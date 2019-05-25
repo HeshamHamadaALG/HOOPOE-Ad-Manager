@@ -10,7 +10,7 @@ function Main() {
         <div className="Main">
             <Router>
                 <Nav />
-                <Route path="/"/>
+                <Route path="/" />
                 <Route path="/login" component={Register} />
             </Router>
         </div>
