@@ -30,15 +30,15 @@ a{
 }
 
 nav{
-	padding-top: 5rem;
+	padding-top: 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	text-transform: uppercase;
-	font-size: 1.6rem;
+	font-size: 1rem;
 }
 .brand{
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 300;
 	transform: translateX(-100rem);
 	animation: slideIn .5s forwards;
@@ -155,7 +155,7 @@ nav ul li a:hover::after{
 	}
 
 	.brand{
-		font-size: 3rem;
+		font-size: 2rem;
 	}
   
   .overlay.menu-open,
