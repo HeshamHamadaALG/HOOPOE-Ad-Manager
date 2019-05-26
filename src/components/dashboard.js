@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Register from './register/register'
+import Maps from './maps/map';
+import Register from './register/register';
 import {
     Tabs, Tab
 } from 'react-bootstrap';
@@ -15,7 +15,7 @@ export class DashBorad extends Component {
                 <div className="container cont-sizing">
                     <Tabs className="navtabs" defaultActiveKey="profile" id="uncontrolled-tab-example">
                         <Tab className="content-tab" eventKey="locations" title="Locations">
-
+                            <Maps />
                         </Tab>
                         <Tab className="content-tab" eventKey="assets" title="Assets">
 
