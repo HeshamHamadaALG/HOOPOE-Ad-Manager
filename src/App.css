@@ -217,6 +217,10 @@ nav ul li a:hover::after{
 	background-color: #eee;
 	margin: 1%; 
 }
+.cont-sizing{
+	/* margin-right: 2% !important;
+	margin-left: 2% !important; */
+}
 
 .navtabs {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12) !important;

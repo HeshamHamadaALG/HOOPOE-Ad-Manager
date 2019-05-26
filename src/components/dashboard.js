@@ -12,7 +12,7 @@ export class DashBorad extends Component {
     render() {
         return (
             <div className="DashBorad">
-                <div className="container">
+                <div className="container cont-sizing">
                     <Tabs className="navtabs" defaultActiveKey="profile" id="uncontrolled-tab-example">
                         <Tab className="content-tab" eventKey="locations" title="Locations">
 
