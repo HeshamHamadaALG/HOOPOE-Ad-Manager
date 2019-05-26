@@ -14,8 +14,6 @@ export class Maps extends Component {
                     center={{ lat: 50, lng: 50 }}
                     zoom={14}
                 />
-               
-
             </div>
             
         );
