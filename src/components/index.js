@@ -11,25 +11,16 @@ import PanelHeader from './PanelHeader/PanelHeader';
 import Sidebar from './Sidebar/Sidebar';
 
 export {
-    // CardElements
     CardAuthor,
     CardCategory,
     CardSocials,
-    // CustomButton
     Button,
-    // CustomCheckbox
     Checkbox,
-    // CustomRadio
     Radio,
-    // Footer
     Footer,
-    // FormInputs
     FormInputs,
-    // Header
     Header,
-    // PanelHeader
     PanelHeader,
-    // Sidebar
     Sidebar,
 
 };

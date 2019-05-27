@@ -31,7 +31,9 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <Sidebar {...this.props} routes={dashboardRoutes}  style={{display: 'none !important'}}/>
+      <div style={{display: 'none !important'}}>
+        <Sidebar {...this.props} routes={dashboardRoutes}/>
+        </div>
         <div className="main-panel" ref="mainPanel">
           <Header {...this.props} />
           <Switch>

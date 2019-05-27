@@ -1,3 +1,4 @@
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -2077,15 +2078,6 @@ Created using IcoMoon - icomoon.io
   font-weight: normal;
   font-style: normal; }
 
-  @font-face {
-    font-family: 'Gabriela-Black';
-    src: url("../fonts/GabrielaStencil-Black.otf");
-   }
-   @font-face {
-    font-family: 'Gabriela-Bold';
-    src: url("../fonts/GabrielaStencil-Bold.otf");
-   }
-
 /*------------------------
 	base class definition
 -------------------------*/
@@ -3790,11 +3782,3 @@ Created using IcoMoon - icomoon.io
       font-size: 48px; }
   .page-header .container h6.category-absolute {
     width: 90%; } }
-
-
-    .hoopoefont{
-      font-family: 'Gabriela-Bold';
-  }
-  .clr{
-    color: #9A9A9A !important;
-  }

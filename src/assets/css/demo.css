@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Gabriela-Bold';
+    src: url("../fonts/GabrielaStencil-Bold.otf");
+    }
+
 .tim-row{
     margin-bottom: 20px;
 }
@@ -55,5 +60,8 @@
     color: #000000 !important;
 }
 .hoopoefont{
-    font-family: 'Gabriela-Bold';
+    font-family: 'Gabriela-Bold' !important;
+}
+.clr {
+    color: #aaa !important;
 }
