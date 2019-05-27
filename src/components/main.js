@@ -1,66 +1,24 @@
 import React from "react";
-import PerfectScrollbar from "perfect-scrollbar";
 import { Route, Switch, Redirect } from "react-router-dom";
-import  Header from "./Header/Header";
-import  Footer from "./Footer/Footer";
-import  Sidebar from "./Sidebar/Sidebar";
+import Nav from './nav-bar/nav';
+import Dashboard from './page';
+import Home from '../views/Home/Home.jsx';
+import Login from './Register/Login.jsx';
+import Signup from './Register/Signup.jsx';
+ 
 
-import dashboardRoutes from "../routes/dashboard.jsx";
-
-var ps;
-
-class Dashboard extends React.Component {
-  componentDidMount() {
-    if (navigator.platform.indexOf("Win") > -1) {
-      ps = new PerfectScrollbar(this.refs.mainPanel);
-      document.body.classList.toggle("perfect-scrollbar-on");
-    }
-  }
-  componentWillUnmount() {
-    if (navigator.platform.indexOf("Win") > -1) {
-      ps.destroy();
-      document.body.classList.toggle("perfect-scrollbar-on");
-    }
-  }
-  componentDidUpdate(e) {
-    if (e.history.action === "PUSH") {
-      this.refs.mainPanel.scrollTop = 0;
-      document.scrollingElement.scrollTop = 0;
-    }
-  }
+class Wrapper extends React.Component {
   render() {
     return (
-      <div className="wrapper">
-      <div style={{display: 'none !important'}}>
-        <Sidebar {...this.props} routes={dashboardRoutes}/>
-        </div>
-        <div className="main-panel" ref="mainPanel">
-          <Header {...this.props} />
-          <Switch>
-            {dashboardRoutes.map((prop, key) => {
-              if (prop.collapse) {
-                return prop.views.map((prop2, key2) => {
-                  return (
-                    <Route
-                      path={prop2.path}
-                      component={prop2.component}
-                      key={key2}
-                    />
-                  );
-                });
-              }
-              if (prop.redirect)
-                return <Redirect from={prop.path} to={prop.pathTo} key={key} />;
-              return (
-                <Route path={prop.path} component={prop.component} key={key} />
-              );
-            })}
-          </Switch>
-          <Footer fluid />
-        </div>
+      <div className="Page">
+              <Nav />
+               <Route path='/' exact component={Home} />
+               <Route path='/login' exact component={Login} />
+               <Route path='/signup' exact component={Signup} />
+               {/* <Route path='/' exact component={Home} /> */}
       </div>
     );
   }
 }
 
-export default Dashboard;
+export default Wrapper;

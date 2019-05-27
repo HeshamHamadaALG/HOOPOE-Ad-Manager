@@ -5,6 +5,7 @@ import Goal from "../views/Goal/Goal.jsx";
 import Payment from "../views/Payment/Payment.jsx";
 import Locations from "../views/Locations/Locations.jsx";
 import Persona from "../views/Persona/Persona.jsx";
+import Home from "../views/Home/Home.jsx";
 
 var dashRoutes = [
   { path: "/dashboard", name: "Analytics", icon: "business_chart-bar-32", component: Dashboard },

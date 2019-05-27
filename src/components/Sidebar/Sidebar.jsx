@@ -44,6 +44,7 @@ class Sidebar extends React.Component {
             className="simple-text logo-normal hoopoefont"
           >
             HOOPOE DIGITAL
+
           </a>
         </div>
         <div className="sidebar-wrapper" ref="sidebar">

@@ -46,7 +46,7 @@ a{
 	display: none;
 }
 
-nav{
+.Nav nav{
 	padding-top: 1rem;
 	display: flex;
 	justify-content: space-between;
@@ -60,42 +60,42 @@ nav{
 	transform: translateX(-100rem);
 	animation: slideIn .5s forwards;
 }
-nav ul{
+.Nav nav ul{
 	display: flex;
 }
-nav ul li{
+.Nav nav ul li{
 	list-style: none;
 	transform: translateX(100rem);
 	animation: slideIn .5s forwards;
 }
-nav ul li:nth-child(1){
+.Nav nav ul li:nth-child(1){
 	animation-delay: 0s;
 }
 
-nav ul li:nth-child(2){
+.Nav nav ul li:nth-child(2){
 	animation-delay: .5s;
 }
 
-nav ul li:nth-child(3){
+.Nav nav ul li:nth-child(3){
 	animation-delay: 1s;
 }
 
-nav ul li:nth-child(4){
+.Nav nav ul li:nth-child(4){
 	animation-delay: 1.5s;
 }
-nav ul li a{
+.Nav nav ul li a{
 	padding: 1rem 0;
 	margin: 0 3rem;
 	position: relative;
 	letter-spacing: 2px;
 }
 
-nav ul li a:last-child{
+.Nav nav ul li a:last-child{
 	margin-right: 0;
 }
 
-nav ul li a::before,
-nav ul li a::after{
+.Nav nav ul li a::before,
+.Nav nav ul li a::after{
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -106,12 +106,12 @@ nav ul li a::after{
 	transition: all .5s;
 }
 
-nav ul li a::before{
+.Nav nav ul li a::before{
 	top: 0;
 	transform-origin: left;
 }
 
-nav ul li a::after{
+.Nav nav ul li a::after{
 	bottom: 0;
 	transform-origin: right;
 }
@@ -128,8 +128,8 @@ nav ul li a::after{
   display: none;
 }
 
-nav ul li a:hover::before,
-nav ul li a:hover::after{
+.Nav nav ul li a:hover::before,
+.Nav nav ul li a:hover::after{
 	transform: scaleX(1);
 }
 
@@ -149,7 +149,7 @@ nav ul li a:hover::after{
     
 	}
 
-	nav{
+	.Nav nav{
 		padding-top: 0;
 		display: none;
 		flex-direction: column;
@@ -159,16 +159,19 @@ nav ul li a:hover::after{
 		text-align: center;
 	}
 
-	nav ul{
+
+.Nav nav 	ul{
     flex-direction: column;
     padding: 0 !important;
 	}
 
-	nav ul li{
+
+.Nav nav 	ul li{
 		margin-top: 3rem;
 	}
 
-	nav ul li a{
+
+.Nav nav 	ul li a{
 		margin: 0;
 		font-size: 1.5rem;
 	}
@@ -197,7 +200,8 @@ nav ul li a:hover::after{
   
 }
 
-/* nav icon  */
+/*
+.Nav nav icon  */
 
 .fas{
   -moz-osx-font-smoothing:grayscale;
@@ -264,4 +268,7 @@ nav ul li a:hover::after{
 	box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
 	border-radius: .25rem;
 }
-
+/* .Form-img{
+	width: 40% !important;
+	margin-right: auto !important; 
+} */
