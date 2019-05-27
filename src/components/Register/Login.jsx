@@ -45,7 +45,7 @@ class Login extends React.Component {
                           </div>
                         </CardBody>
                         <CardFooter className="card-footer">
-                          <Link to="" className="btn-round mb-3 btn btn-lg btn-block" style={{ backgroundColor: "#e7a15e" }}>Login</Link>
+                          <Link to="/dashboard" className="btn-round mb-3 btn btn-lg btn-block" style={{ backgroundColor: "#e7a15e" }}>Login</Link>
                           <div className="pull-left">
                             <h6>
                               <Link to="/signup" className="link footer-link">Don't Have Account ?</Link>

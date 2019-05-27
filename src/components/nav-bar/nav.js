@@ -35,9 +35,9 @@ export class Nav extends Component {
     render() {
         let loc = window.location.pathname;
         let test = function(){
-            if (loc == '/dashboard'){
+            if ((loc == '/dashboard') || (loc == '/locations')){
                 return 'none';
-            } else if (loc == '/locations'){
+            } else {
                 return '';
             }
         }

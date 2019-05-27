@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Nav } from "reactstrap";
 import PerfectScrollbar from "perfect-scrollbar";
 import logo from "../../logo-white.svg";
@@ -39,13 +39,13 @@ class Sidebar extends React.Component {
               <img src={logo} alt="react-logo" />
             </div>
           </a>
-          <a
-            href="http://www.hoopoe.digital"
+          <Link
+            to="/"
             className="simple-text logo-normal hoopoefont"
           >
             HOOPOE DIGITAL
 
-          </a>
+          </Link>
         </div>
         <div className="sidebar-wrapper" ref="sidebar">
           <Nav>

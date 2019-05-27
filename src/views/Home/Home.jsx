@@ -13,7 +13,7 @@ class Home extends React.Component {
         <div className="full-page section-image" >
           <div>
             <div className="full-page-content">
-              <Container>
+              {/* <Container>
                 <Row>
                   <Col md={8} lg={4} className="ml-auto mr-auto col-12">
                     <Form>
@@ -57,7 +57,7 @@ class Home extends React.Component {
                     </Form>
                   </Col>
                 </Row>
-              </Container>
+              </Container> */}
             </div>
           </div>
         </div>
