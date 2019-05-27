@@ -129,7 +129,7 @@ class Dashboard extends React.Component {
           </Row> */}
           <Row>
           <Col xs={12}>
-              <Card className="card-plain">
+              <Card>
                 <CardHeader>
                   <CardTitle tag="h4">Campaigns</CardTitle>
                 </CardHeader>

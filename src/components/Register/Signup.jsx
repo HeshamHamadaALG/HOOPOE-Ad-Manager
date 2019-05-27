@@ -16,7 +16,7 @@ class Signup extends React.Component {
                 <Row>
                   <Col md={8} lg={4} className="ml-auto mr-auto col-12">
                     <Form>
-                      <Card className="card-signup card">
+                      <Card className="card-login card-plain card" >
                         <CardHeader className="card-header">
 
                           <Row>

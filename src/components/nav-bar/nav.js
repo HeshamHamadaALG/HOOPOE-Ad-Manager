@@ -35,7 +35,7 @@ export class Nav extends Component {
     render() {
         let loc = window.location.pathname;
         let test = function(){
-            if ((loc == '/dashboard') || (loc == '/locations')){
+            if (loc.includes('/dashboard/') || loc.includes('/signup')){
                 return 'none';
             } else {
                 return '';

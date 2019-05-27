@@ -15,10 +15,9 @@ class Wrapper extends React.Component {
       <div className="Page">
               <Nav routes={dashboardRoutes}/>
                <Route path='/' exact component={Home} />
-               <Route path='/login' exact component={Login} />
-               <Route path='/signup' exact component={Signup} />
-               <Route path='/dashboard' exact component={Dashboard} />
-               
+               <Route path='/login' component={Login} />
+               <Route path='/signup' component={Signup} />
+               <Route path='/dashboard' component={Dashboard} />
       </div>
     );
   }
