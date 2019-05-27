@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Maps from './maps/map';
+import Search from './maps/loc-search';
 import Register from './register/register';
 import {
-    Tabs, Tab
+    Tabs, Tab,
 } from 'react-bootstrap';
 
 
@@ -15,7 +16,13 @@ export class DashBorad extends Component {
                 <div className="container cont-sizing">
                     <Tabs className="navtabs" defaultActiveKey="profile" id="uncontrolled-tab-example">
                         <Tab className="content-tab" eventKey="locations" title="Locations">
-                            <Maps />
+                        <div className="cont-sizing">
+                        <Search  style={{width: '18rem'}}/> 
+                            {/* <Maps /> */}
+                            <div className="col-md-9">
+                                
+                            </div>
+                        </div>
                         </Tab>
                         <Tab className="content-tab" eventKey="assets" title="Assets">
 

@@ -263,5 +263,6 @@ nav ul li a:hover::after{
 	padding: 1.7rem 0 0 0;
 	box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
 	border-radius: .25rem;
+	/* width: 90vw; */
 }
 
