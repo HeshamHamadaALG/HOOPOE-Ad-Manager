@@ -18,7 +18,7 @@ class CardSocials extends React.Component {
               key={key}
               href={prop.link}
             >
-              <i className={prop.icon} />
+              <i className={prop.icon} style={{color: '#aaa'}}/>
             </Button>
           );
         })}

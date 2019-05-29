@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { Row, Col, Card, CardHeader, CardBody, CardFooter, Container, Form } from "reactstrap";
-import logo from "../../logo-white.svg";
 
-
-import { PanelHeader } from "../../components";
 class Signup extends React.Component {
   render() {
     return (

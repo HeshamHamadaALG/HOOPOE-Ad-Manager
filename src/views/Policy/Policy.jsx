@@ -1,16 +1,13 @@
 import React from "react";
 import {
-  Alert,
   Card,
-  CardTitle,
   CardBody,
   CardHeader,
   Row,
   Col
 } from "reactstrap";
-import NotificationAlert from "react-notification-alert";
 
-import { PanelHeader, Button } from "../../components";
+import { PanelHeader } from "../../components";
 
 class Policy extends React.Component {
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route} from "react-router-dom";
 import Nav from './nav-bar/nav';
 import Dashboard from './page';
 import Home from '../views/Home/Home.jsx';

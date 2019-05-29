@@ -36,7 +36,7 @@ a{
   margin: 0 auto;
 }
 .menu-toggle{
-	position: fixed;
+	position: absolute;
 	top: 0.5rem;
 	right: 1rem;
 	color: #eeeeee;
@@ -184,7 +184,8 @@ a{
   nav.menu-open{
 	  display: flex;
 	  transform: scale(1);
-    opacity: 1;
+		opacity: 1;
+		background-color: rgba(32, 36, 44, 0.05);
   }
 
   /* Form  */
@@ -268,7 +269,3 @@ a{
 	box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
 	border-radius: .25rem;
 }
-/* .Form-img{
-	width: 40% !important;
-	margin-right: auto !important; 
-} */

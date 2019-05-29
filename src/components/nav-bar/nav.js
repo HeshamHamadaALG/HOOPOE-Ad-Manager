@@ -32,6 +32,16 @@ export class Nav extends Component {
         }
     }
 
+    onClickNav = (e) => {
+        if (this.state.icon === faTimes || this.state.classNav === 'menu-open') {
+            this.setState({
+                icon: faBars,
+                classOver: 'overlay',
+                classNav: ''
+            })
+        }
+    }
+
     render() {
         let loc = window.location.pathname;
         let test = function(){
@@ -53,10 +63,10 @@ export class Nav extends Component {
                         <nav className={this.state.classNav}>
                             <h1 className="brand"><Link style={{textDecoration: 'none', color: '#999'}} className="hoopoefont" to="/">HOOPOE</Link></h1>
                             <ul>
-                                <li><Link style={{textDecoration: 'none', color: '#999'}} to="/">Home</Link></li>
-                                <li><Link style={{textDecoration: 'none', color: '#999'}} to="/about">About</Link></li>
-                                <li><Link style={{textDecoration: 'none', color: '#999'}} to="/contact">Contact</Link></li>
-                                <li><Link style={{textDecoration: 'none', color: '#999'}} dis={this.state.display} to="/login">Login</Link></li>
+                                <li><Link style={{textDecoration: 'none', color: '#999'}} onClick={this.onClickNav} to="/">Home</Link></li>
+                                <li><Link style={{textDecoration: 'none', color: '#999'}} onClick={this.onClickNav} to="/about">About</Link></li>
+                                <li><Link style={{textDecoration: 'none', color: '#999'}} onClick={this.onClickNav} to="/contact">Contact</Link></li>
+                                <li><Link style={{textDecoration: 'none', color: '#999'}} onClick={this.onClickNav} dis={this.state.display} to="/login">Login</Link></li>
                             </ul>
                         </nav>
                     </div>

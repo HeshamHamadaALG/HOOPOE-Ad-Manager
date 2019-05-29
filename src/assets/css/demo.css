@@ -116,3 +116,12 @@
     height: 100vh;
     overflow: hidden;
 }
+
+.prof-title {
+    color: #777777 !important;
+    text-decoration: none !important;
+}
+.prof-title:hover {
+    color: #20242c !important;
+    text-decoration: none !important;
+}

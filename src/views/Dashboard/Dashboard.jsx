@@ -3,24 +3,16 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   CardTitle,
   Row,
   Col,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   Table
 } from "reactstrap";
-import { Line, Bar } from "react-chartjs-2";
-import { PanelHeader, CardCategory } from "../../components";
+import { Line } from "react-chartjs-2";
+import { PanelHeader } from "../../components";
 
 import {
   dashboardPanelChart,
-  dashboardShippedProductsChart,
-  dashboardAllProductsChart,
-  dashboard24HoursPerformanceChart
 } from "../../variables/charts.jsx";
 import { thead, tbody } from "../../variables/dumy-data";
 

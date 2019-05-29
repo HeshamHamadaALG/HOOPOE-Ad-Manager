@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { Row, Col, Card, CardHeader, CardBody, CardFooter, Container, Form } from "reactstrap";
 import logo from "../../logo-white.svg";
 
-
-import { PanelHeader } from "../../components";
 class Login extends React.Component {
   render() {
     return (
@@ -21,7 +19,7 @@ class Login extends React.Component {
                           <div className="logo-container">
                             <Row>
                               <Col lg={5} md={5} sm={5} className="ml-auto mr-auto col-5">
-                                <img src={logo} className="Form-img" />
+                                <img src={logo} className="Form-img" alt="HOOPOE DIGITAL"/>
                               </Col>
                             </Row>
                           </div>

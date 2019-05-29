@@ -1,11 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { Row, Col, Card, CardHeader, CardBody, CardFooter, Container, Form } from "reactstrap";
-import FormInputs from '../../components/FormInputs/FormInputs.jsx';
-import logo from "../../logo-white.svg";
 
-
-import { PanelHeader } from "../../components";
 class Home extends React.Component {
   render() {
     return (
